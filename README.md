@@ -1,48 +1,38 @@
-# Proje yöneticisinin haftalık özeti
+# Proje takvimi
 
-Tek proje yöneticisinin projelerini üst yönetime aktaracağı renkli ve sade şablon. Üç örnek proje içerir. PowerPoint'teki **Üretim Hattı tamamlanması, verilen oran doğrultusunda %30** olarak ayarlanmıştır. Diğer proje bilgileri örnektir.
+Tek projenin haftalık yönetim sunumu için **iki sayfalık, düzenlenebilir PowerPoint**. Önceki çalışma [old/](./old/) klasöründe saklanır. Bu sürüm sıfırdan hazırlanmıştır.
 
-| Dosya | İçerik | İndir |
-| --- | --- | --- |
-| Excel | **Tek sekme ve tek yazdırma sayfası.** Veri girişleri, otomatik hesaplamalar ve güncellenen grafik. | [Excel’i indir](./Proje_Takvimi.xlsx?raw=true) |
-| PowerPoint | **2 düzenlenebilir slayt.** İlerleme karşılaştırması, haftalık üretim grafiği, proje tabloları ve BEKLENTİ. | [PowerPoint’i indir](./Proje_Sunumu.pptx?raw=true) |
-| PDF | **2 sayfa.** PowerPoint’in telefondan görüntülenebilen sürümü. | [PDF’yi aç](./Proje_Sunumu.pdf?raw=true) |
+- [PowerPoint’i indir](./Proje_Takvimi.pptx?raw=true)
+- [PDF’yi telefondan görüntüle](./Proje_Takvimi.pdf?raw=true)
 
-## Ekranda neler var?
+Proje adı, tarihler, departmanlar, bütçe ve riskler **örnek veridir**. Üretim tamamlanması önceki örnekte verilen **%30** ile başlar. Kendi projenize göre değiştirin.
 
-- **Proje durumu:** Güncel aşama, gerçek ve planlanan ilerleme, bitiş tarihleri, gecikme ve risk seviyesi.
-- **Efor ve maliyet:** Kişi sayısı, toplam saat, birimlere göre saat, gerçekleşen ve kalan maliyet, bütçe ve bütçe farkı.
-- **Haftalık işler:** Yapılanlar ve sıradaki iş.
-- **BEKLENTİ:** Üst yönetimden istenen karar veya destek, karar mercii, son tarih ve gecikirse etkisi.
+## 1. sayfa: Takvim, ilerleme ve efor
 
-## Excel önizlemesi
+- Haftalara bölünmüş aşamalar, mevcut aşama, planlanan ve güncel bitiş tarihleri.
+- Kritik teslimat ve takvime etkisi.
+- **Gerçek %30 / plan %40** karşılaştırma grafiği. Örnek proje planın 10 yüzde puanı gerisindedir; bitiş tahmini 7 gün gecikmiştir.
+- Departmanlara göre kişi ve rapor tarihine kadar toplam çalışma saati.
 
-![Tek sayfalık proje yöneticisi ekranı](./onizleme/yonetici-ozeti.png)
+![Proje takvimi ve tamamlanma grafiği](./onizleme/sayfa-1.png)
 
-## PowerPoint grafiklerini haftalık güncelleme
+## 2. sayfa: Maliyet, bütçe, risk ve işler
 
-Grafikler resim değildir. Her grafiğin dosyanın içine gömülü, düzenlenebilir bir Excel veri tablosu vardır.
+- Efor, alınan malzeme ve alınacak malzeme için gerçekleşen, kalan ve tahmini toplam maliyet.
+- Bütçe ve tahmini maliyet karşılaştırma grafiği.
+- Risk seviyesi, beklenen etkisi, önlemi, sorumlusu ve aksiyon tarihi.
+- Yapılan işler ve sıradaki işler; sorumluları ve tarihleri.
 
-1. PowerPoint'te grafiğe sağ tıklayıp **Verileri Düzenle** seçeneğini açın. Masaüstü PowerPoint'te bu seçenek **Grafik Tasarımı → Verileri Düzenle** yolunda da bulunur.
-2. İlk slayttaki karşılaştırma grafiğinde **Üretim Hattı / Gerçek (%)** hücresindeki `30` değerini güncelleyin. Örneğin `40` yazdığınızda çubuk ve veri etiketi **%40**, `25` yazdığınızda **%25** olur. Değerleri **0–100 arasında, yüzde işareti olmadan** girin. Planlanan oranı da aynı veri tablosunda değiştirebilirsiniz.
-3. İkinci slayttaki **Üretim: haftalık ilerleme** grafiği, **1. Hafta = 30** kaydıyla başlar. Önceki haftayı saklayarak sonraki satıra `2. Hafta` ve yeni oranı ekleyin. Verileri Düzenle penceresindeki **mavi veri aralığını yeni satırı kapsayacak şekilde genişletin**. Böylece noktalar bir çizgiyle bağlanır ve haftalar arasındaki artış veya azalış görünür.
-4. Sonraki haftalarda aynı adımı tekrarlayın. Geçmiş hafta oranları paylaşılmadığı için dosyaya geçmiş değerler eklenmemiştir.
+![Maliyet ve bütçe, riskler ve haftalık işler](./onizleme/sayfa-2.png)
 
-**İki grafiğin veri tabloları ayrıdır.** Güncel oranı karşılaştırma grafiğinde, haftalık kaydı ilerleme grafiğinde güncelleyin. Slayttaki normal tablonun yüzdesi de ayrıca düzenlenir; tabloya yazılan sayı grafiği otomatik değiştirmez. Ayrı Excel dosyasıyla otomatik bağlantı yoktur. Bu güncellemede yalnızca PowerPoint ve onun PDF/önizlemeleri yenilenmiştir.
+## Haftalık kullanım
 
-**iPhone:** Sunumu ve PDF'yi görüntüleyebilirsiniz. Grafik verisi düzenleme seçenekleri mobil sürüme göre değişebilir; haftalık veri girişini masaüstü PowerPoint'te yapın. PDF ve PNG önizlemeleri sabittir; grafik verisi bunlardan düzenlenmez.
+1. Proje adını, yöneticiyi ve rapor tarihini değiştirin. Aşama tarihlerini ve takvimdeki çalışma haftalarını güncelleyin. Başlıklardaki tarihler hafta başlangıçlarıdır. **Plan** baz takvimi, **Güncel** revize takvimi, **Devam** mevcut aşamayı gösterir.
+2. Tamamlanma grafiğine sağ tıklayıp **Verileri Düzenle** seçeneğini açın. **Plan** ve **Gerçek** satırlarına yüzde işareti olmadan `0–100` arasında sayı yazın. Örneğin `30` değerini `45` yaptığınızda grafik **%45**, `20` yaptığınızda **%20** gösterir. Grafik verisi dosyanın içindeki gömülü Excel tablosundadır; ayrı dosya gerekmez.
+3. Kişi ve saatleri departman bazında girin. Örnekte departmanların kişi sayıları farklı çalışanları temsil eder. Aynı kişiyi birden fazla departmanda saymayın.
+4. Maliyetleri **bin TL, KDV hariç** girin. Efor için gerçekleşen ve kalan tutarı ayırın. Alınmış malzemeleri ve henüz alınacakları ayrı satırlarda tutun. Tahmini toplam, gerçekleşen ve kalan maliyetlerin toplamıdır. **Öngörülen bütçe payı = bütçe − tahmini toplam maliyet**; negatif değer beklenen bütçe aşımıdır.
+5. Bütçe grafiğinin **Verileri Düzenle** tablosuna gerçekleşen maliyeti, tahmini toplamı ve bütçeyi girin. Riskleri ve haftalık işleri güncelleyin; yeni haftanın kopyasını tarih vererek saklayın.
 
-## Excel kullanımı
+**Grafikler resim değildir ve kendi veri tablolarıyla güncellenir.** Normal PowerPoint tabloları, toplam satırları, plan farkı ve bitiş özeti ise ayrıca düzenlenir; grafikle otomatik bağlantıları yoktur. Örneğin gerçek ilerlemeyi değiştirdiğinizde “planın 10 puan gerisinde” metnini de yeniden hesaplayıp değiştirin. PDF ve PNG önizlemeleri sabittir; veri girişinden sonra PowerPoint’ten yeniden PDF kaydedin.
 
-1. Proje yöneticisini, rapor tarihini ve **açık sarı giriş alanlarını** güncelleyin. Her satır bir projedir. Planlanan yüzde, kişi/saat, birim dağılımı ve maliyet özetlerini yönetici girer.
-2. Yüzde ve gün sapması, tahmini toplam maliyet, bütçe farkı ve özet göstergeleri otomatik hesaplanır. Grafik, ilerleme yüzdeleriyle güncellenir. Beyaz hesaplama alanlarını koruyun.
-3. **BEKLENTİ** alanına genel bir açıklama yerine istenen karar veya desteği, kimden istendiğini ve tarihini yazın.
-4. Haftalık geçmiş için dosyanın bir kopyasını rapor tarihiyle saklayın. Bu sade sürümde ayrı arşiv ve veri sekmeleri yoktur.
-
-Excel tutarları **TL ve KDV hariç**, sunumdaki maliyet tablosu **bin TL ve KDV hariçtir**. Bütçe farkı bütçe eksi tahmini toplamdır. Negatif fark aşım, pozitif takvim günü gecikme demektir. Kalan maliyet yoksa **0** girin; boş bırakılan maliyet eksik bilgi olarak gösterilir.
-
-Excel, A3 yatayda tek sayfaya yazdırılacak şekilde ayarlanmıştır. PowerPoint tabloları ve grafikleri düzenlenebilir. PDF, sunumun kayıt anındaki görünümüdür.
-
-**iPhone:** Bu sayfayı Safari’de açıp indirme bağlantısını kullanın. İnen dosyayı **Dosyalar → İndirilenler → Paylaş → Excel / PowerPoint** yoluyla açabilirsiniz. Hızlı görüntüleme için PDF bağlantısını kullanın.
-
-[Sunum 1. sayfa önizlemesi](./onizleme/sunum-1.png) · [Sunum 2. sayfa önizlemesi](./onizleme/sunum-2.png)
+**iPhone:** Hızlı görüntüleme için PDF bağlantısını kullanın. PowerPoint indirme bağlantısını Safari’de açıp dosyayı Dosyalar uygulamasına kaydedebilirsiniz. Grafik veri girişini masaüstü PowerPoint’te yapın; mobil sürümlerde düzenleme seçenekleri sınırlı olabilir.
