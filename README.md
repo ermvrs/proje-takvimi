@@ -1,71 +1,35 @@
-# İnteraktif Proje Takvimi
+# Proje yöneticisinin haftalık özeti
 
-Haftalık proje toplantıları için hazırlanmış, veri girişleriyle grafikleri güncellenen makrosuz Excel şablonu. Dosyada üç kurgusal örnek proje bulunur.
+Tek proje yöneticisinin projelerini üst yönetime aktaracağı renkli ve sade şablon. Üç kurgusal örnek proje içerir.
 
-## Excel dosyasını indirin
+| Dosya | İçerik | İndir |
+| --- | --- | --- |
+| Excel | **Tek sekme ve tek yazdırma sayfası.** Veri girişleri, otomatik hesaplamalar ve güncellenen grafik. | [Excel’i indir](./Proje_Takvimi.xlsx?raw=true) |
+| PowerPoint | **2 düzenlenebilir slayt.** Proje özeti, haftalık işler ve BEKLENTİ. | [PowerPoint’i indir](./Proje_Sunumu.pptx?raw=true) |
+| PDF | **2 sayfa.** PowerPoint’in telefondan görüntülenebilen sürümü. | [PDF’yi aç](./Proje_Sunumu.pdf?raw=true) |
 
-**[Proje_Takvimi.xlsx dosyasını indirin](./Proje_Takvimi.xlsx?raw=true)**
+## Ekranda neler var?
 
-iPhone’da bu sayfayı Safari ile açabilirsiniz. Dosya indikten sonra **Dosyalar → İndirilenler → Paylaş → Excel** yolunu kullanın. Grafik ve formül uyumluluğu için Microsoft Excel önerilir.
+- **Proje durumu:** Güncel aşama, gerçek ve planlanan ilerleme, bitiş tarihleri, gecikme ve risk seviyesi.
+- **Efor ve maliyet:** Kişi sayısı, toplam saat, birimlere göre saat, gerçekleşen ve kalan maliyet, bütçe ve bütçe farkı.
+- **Haftalık işler:** Yapılanlar ve sıradaki iş.
+- **BEKLENTİ:** Üst yönetimden istenen karar veya destek, karar mercii, son tarih ve gecikirse etkisi.
 
-## Panel önizlemesi
+## Excel önizlemesi
 
-![Proje özeti, ilerleme, maliyet, efor ve risk grafikleri](./onizleme/panel.png)
+![Tek sayfalık proje yöneticisi ekranı](./onizleme/yonetici-ozeti.png)
 
-## İçerik
+## Kullanım
 
-- **Panel:** Proje ve rapor tarihi seçimi, tamamlanma oranı, takvim sapması, bütçe, tahmini toplam maliyet, efor ve risk göstergeleri. Dört yerel Excel grafiği kaynak verilerden beslenir.
-- **Portfoy:** Tüm projelerin ilerleme, efor, maliyet, bütçe ve risk karşılaştırması.
-- **Takvim:** Seçili projenin haftalık Gantt görünümü. Planlanan işler, ilerleme ve tahmini bitiş sapmaları ayrı renklerde gösterilir.
-- **Projeler:** Proje tanımları, onaylı tarihler, bütçe ve kalan efor tahmini.
-- **Gorevler:** İş paketleri, sorumlular, birimler, ağırlıklar, ilerleme yüzdeleri ve güncel bitiş tarihleri.
-- **Efor:** Kişi ve tarih bazında çalışma saatleri, birimler ve saat maliyetleri.
-- **Maliyetler:** Gerçekleşen alımlar ile kalan malzeme, hizmet ve diğer alım tahminleri.
-- **Riskler:** Olasılık, etki, risk seviyesi, risk sahibi ve azaltıcı önlemler.
-- **Aksiyonlar:** Yapılacaklar, tamamlanan işler, kararlar, sorumlular ve hedef tarihler.
-- **Haftalik:** Haftalık sonuçlar ve toplantı notlarının arşivi.
-- **Kullanim:** Veri girişi, hesaplama yöntemleri ve haftalık çalışma adımları.
+1. Proje yöneticisini, rapor tarihini ve **açık sarı giriş alanlarını** güncelleyin. Her satır bir projedir. Planlanan yüzde, kişi/saat, birim dağılımı ve maliyet özetlerini yönetici girer.
+2. Yüzde ve gün sapması, tahmini toplam maliyet, bütçe farkı ve özet göstergeleri otomatik hesaplanır. Grafik, ilerleme yüzdeleriyle güncellenir. Beyaz hesaplama alanlarını koruyun.
+3. **BEKLENTİ** alanına genel bir açıklama yerine istenen karar veya desteği, kimden istendiğini ve tarihini yazın.
+4. Haftalık geçmiş için dosyanın bir kopyasını rapor tarihiyle saklayın. Bu sade sürümde ayrı arşiv ve veri sekmeleri yoktur.
 
-## Nasıl kullanılır?
+Excel tutarları **TL ve KDV hariç**, sunumdaki maliyet tablosu **bin TL ve KDV hariçtir**. Bütçe farkı bütçe eksi tahmini toplamdır. Negatif fark aşım, pozitif takvim günü gecikme demektir. Kalan maliyet yoksa **0** girin; boş bırakılan maliyet eksik bilgi olarak gösterilir.
 
-1. Excel dosyasında **Kullanim** sayfasını okuyun.
-2. Sarı veri giriş alanlarını kendi proje bilgilerinizle değiştirin. Proje ID ve Personel ID alanlarını tutarlı kullanın.
-3. **Panel!C5** alanından projeyi, **Panel!N5** alanından rapor tarihini seçin.
-4. Haftalık sunum öncesinde görev ilerlemelerini, güncel bitişleri, kalan tahminleri, riskleri ve aksiyonları güncelleyin.
-5. Hafta kapanışında **Panel!B68:H68** satırını kopyalayıp **Haftalik** sayfasındaki yeni satırın **A:G** alanına **Özel Yapıştır → Değerler** ile yapıştırın. **H:K** alanlarına toplantı notlarını girin. Her proje ve hafta için tek arşiv satırı tutun.
+Excel, A3 yatayda tek sayfaya yazdırılacak şekilde ayarlanmıştır. PowerPoint tabloları düzenlenebilir; Excel ile otomatik veri bağlantısı yoktur. PowerPoint ve PDF, bu raporun hazırlanma anındaki örnek değerlerini içerir.
 
-## Hesaplama kuralları
+**iPhone:** Bu sayfayı Safari’de açıp indirme bağlantısını kullanın. İnen dosyayı **Dosyalar → İndirilenler → Paylaş → Excel / PowerPoint** yoluyla açabilirsiniz. Hızlı görüntüleme için PDF bağlantısını kullanın.
 
-- **Tamamlanma:** Görev ağırlıklarıyla hesaplanan ortalama. Ağırlıkların toplamı 100 olmak zorunda değildir.
-- **Planlanan ilerleme:** Planlanan başlangıç ve bitiş arasında takvim günlerine göre doğrusal ilerleme varsayımı. Hafta sonları ve tatiller ayrıca çıkarılmaz.
-- **Takvim sapması:** Gerçekleşen yüzde eksi planlanan yüzde, yüzde puan olarak gösterilir.
-- **Kişi sayısı:** Proje ve dönem içinde benzersiz Personel ID sayısı. Aynı kişinin tekrarlanan efor satırları kişi sayısını artırmaz.
-- **Efor maliyeti:** Kaydedilen saat × o satırın saat maliyeti.
-- **Tahmini toplam maliyet:** Gerçekleşen efor + gerçekleşen alımlar + kalan efor tahmini + kalan alım tahmini.
-- **Bütçe farkı:** Onaylı bütçe − tahmini toplam maliyet. Negatif değer bütçe aşımıdır.
-- **Risk puanı:** Olasılık × etki. 1–4 düşük, 5–9 orta, 10–15 yüksek, 16–25 kritik.
-- Tüm parasal tutarlar **TL ve KDV hariçtir**.
-
-Rapor tarihi, efor ve gerçekleşen alımlarda toplama kesimidir. Görev ilerlemeleri, kalan maliyet tahminleri ve risk/aksiyon durumları güncel fotoğraftır. Tarihi geri almak eski durumları geri getirmez; geçmiş sonuçlar **Haftalik** arşivinden incelenir. Haftalık arşiv otomatik oluşturulmaz.
-
-## Gantt önizlemesi
-
-![Haftalık Gantt takvimi](./onizleme/takvim.png)
-
-Kritik işaretleri proje yöneticisi tarafından girilir. Öncül görev ID bilgi amaçlıdır; dosya otomatik kritik yol veya bağımlılığa göre tarih öteleme hesabı yapmaz. Yeşil bant, ilerleme yüzdesinin plan süresine dağıtılmış görsel karşılığıdır.
-
-## Aksiyonlar ve toplantı notları
-
-![Açık ve tamamlanan aksiyonlar, toplantı notları ve arşivleme satırı](./onizleme/aksiyonlar.png)
-
-## Hazır kapasite
-
-20 proje, 200 görev, 600 efor kaydı, 200 alım, 120 risk, 200 aksiyon ve 260 haftalık kayıt için hazır alan vardır. Kapasiteyi aşarken formül, doğrulama ve özet aralıkları da genişletilmelidir.
-
-Takvim ilk 40 görevi ve 26 haftayı, panel aksiyon listeleri ilk 6 kaydı, ilerleme grafiği son 12 haftayı gösterir. Kayıtsız haftalar çizilmez; grafik veri alanındaki `#N/A` değerleri bu amaçla kullanılır.
-
-## Doğrulama
-
-Ağırlıklı ilerleme, benzersiz kişi sayısı, maliyetler, eksik ve sıfır girdiler, rapor tarihi kesimi ve risk değişimleri kontrol edildi. Başlangıç ve değiştirilmiş veri senaryoları LibreOffice ile ayrıca yeniden hesaplandı; grafik veri bağları ve güncellenen grafik önbelleği karşılaştırıldı. Microsoft Excel üzerinde ayrıca elle açılış kontrolü yapılmadı.
-
-Önizlemeler sabit görsellerdir. İnteraktif hesaplamalar ve grafikler Excel dosyasındadır. Örnekler gerçek proje veya şirket bilgisi içermez.
+[Sunum 1. sayfa önizlemesi](./onizleme/sunum-1.png) · [Sunum 2. sayfa önizlemesi](./onizleme/sunum-2.png)

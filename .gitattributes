@@ -1,3 +1,5 @@
 *.xlsx binary
+*.pptx binary
+*.pdf binary
 *.png binary
 *.md text eol=lf
